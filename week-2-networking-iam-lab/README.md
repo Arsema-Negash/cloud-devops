@@ -78,3 +78,22 @@ Under standard AWS IPv4 subnet rules, AWS reserves 5 addresses per subnet:
 The original `10.0.0.0/24` network was divided into four equal-sized `/26` subnets by borrowing 2 host bits.
 
 Each subnet contains 64 total IPv4 addresses, 62 conventionally usable host addresses, and 59 usable addresses under standard AWS subnet rules.
+
+
+## Task 3: Test DNS Resolution
+
+### Domain Tested
+`example.com`
+
+### Command Used
+```bash
+getent hosts example.com
+```
+
+### Results
+- **DNS resolution:** Successful
+- **IP address returned:** [140.32.182.253]
+
+### What DNS Does
+DNS (Domain Name System) translates human-readable domain names into IP addresses so computers can locate and communicate with websites and other network services.
+
