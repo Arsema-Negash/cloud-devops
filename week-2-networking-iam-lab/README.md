@@ -92,6 +92,28 @@ getent hosts example.com
 
 ### Results
 - **DNS resolution:** Successful
+
+
+## Task 4: Inspect an HTTPS Website
+
+### Website Tested
+`https://example.com`
+
+### Command Used
+```bash
+curl -I https://example.com
+```
+
+### Results
+- **Website loaded successfully:** Yes
+- **HTTP status code:** [HTTP/1.1]
+- **Protocol version:** [200]
+
+### What HTTPS Adds to HTTP
+HTTPS uses TLS encryption to protect communication between a browser and a web server. It also provides server authentication and helps protect data from interception or modification.
+
+### Why DNS Resolution Alone Is Not Enough
+DNS only translates a domain name into an IP address. A successful website connection also requires network connectivity, a successful TLS handshake for HTTPS, and a working web server that can return an HTTP response.
 - **IP address returned:** [140.32.182.253]
 
 ### What DNS Does
