@@ -119,3 +119,27 @@ DNS only translates a domain name into an IP address. A successful website conne
 ### What DNS Does
 DNS (Domain Name System) translates human-readable domain names into IP addresses so computers can locate and communicate with websites and other network services.
 
+
+
+## Task 5: HTTP Status Codes and Troubleshooting
+
+### HTTP Status Codes
+
+| Status Code | Meaning |
+|---|---|
+| 200 | OK — Request succeeded. |
+| 301 | Moved Permanently — Resource has moved to another URL. |
+| 403 | Forbidden — Access is denied. |
+| 404 | Not Found — Requested resource does not exist. |
+| 500 | Internal Server Error — Something went wrong on the server. |
+
+### Types of Network and HTTP Problems
+
+- **DNS failure:** The domain name cannot be resolved into an IP address.
+- **Connection timeout:** The computer cannot connect to the server within the expected time.
+- **TLS certificate error:** The browser cannot verify the server's security certificate.
+- **HTTP error response:** The server receives the request but responds with an HTTP error status.
+
+### Key Difference
+
+DNS failures happen before the computer can locate the server using its domain name. Connection and TLS errors happen during the connection process. HTTP errors happen after the server has received and processed the request.
