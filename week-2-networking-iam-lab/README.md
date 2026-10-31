@@ -143,3 +143,25 @@ DNS (Domain Name System) translates human-readable domain names into IP addresse
 ### Key Difference
 
 DNS failures happen before the computer can locate the server using its domain name. Connection and TLS errors happen during the connection process. HTTP errors happen after the server has received and processed the request.
+
+
+## Task 6: AWS IAM Policy
+
+Created `s3-read-policy.json` to allow reading objects from a specific S3 bucket.
+
+### Policy Questions
+
+1. **Which field defines the allowed action?**  
+   The `Action` field defines the permission which is `s3:GetObject`.
+
+2. **Which field defines the resource?**  
+   The `Resource` field specifies the S3 objects inside `example-bucket`.
+
+3. **Does this policy allow listing bucket contents?**  
+   No. It does not include `s3:ListBucket`.
+
+4. **Why is a narrow permission safer than `s3:*`?**  
+   It follows the principle of least privilege by granting only the permissions required.
+
+5. **Why should AWS access keys never be committed to GitHub?**  
+   Access keys are sensitive credentials. Exposing them could allow unauthorized access to AWS resources.
