@@ -165,3 +165,18 @@ Created `s3-read-policy.json` to allow reading objects from a specific S3 bucket
 
 5. **Why should AWS access keys never be committed to GitHub?**  
    Access keys are sensitive credentials. Exposing them could allow unauthorized access to AWS resources.
+
+
+## Task 7: Troubleshooting Scenarios
+
+| Scenario | Problem Type | Explanation |
+|---|---|---|
+| Domain doesn't resolve. | DNS | The domain name cannot be translated into an IP address. |
+| Domain resolves, but browser times out. | Network / Connection | The computer cannot establish a connection to the server in time. |
+| Browser displays a TLS certificate warning. | TLS | The browser cannot verify the server's certificate. |
+| Website returns HTTP 404. | HTTP / Application | The server responds, but the requested resource cannot be found. |
+| EC2 reaches S3 but receives AccessDenied. | IAM / S3 Authorization | The IAM role or bucket policy does not grant the required permission. |
+
+### Conclusion
+
+This lab helped me understand IP addressing, subnetting, DNS resolution, HTTPS communication, HTTP status codes, and basic AWS IAM permissions. I also learned how to identify common networking and access-control problems.
